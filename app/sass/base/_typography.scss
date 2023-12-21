@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+html {
+    font-size: 62.5%; // (62.5 x 16) / 100 = 10 => 1rem = 10px
+    @include tablet() {
+        font-size: 50%; // (50 x 16) / 100 = 8 => 1rem = 8px
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+}
