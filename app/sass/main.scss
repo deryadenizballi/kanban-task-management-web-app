@@ -1,11 +1,12 @@
 // utils 
 @import "./utils/breakpoints";
-@import "./utils/themes";
+// @import "./utils/themes";
+
 
 /* base */
+@import "./base/_variables";
 @import "./base/_reset";
 @import "./base/_typography";
-@import "./base/_variables.scss";
 
 
 /* components */
@@ -15,7 +16,7 @@
 @import "./components/_form";
 @import "./components/_header";
 @import "./components/_navbar";
+@import "./components/_kanban";
+@import "./components/_mood";
 
-
-
-
+ 

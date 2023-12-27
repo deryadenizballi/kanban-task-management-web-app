@@ -1,0 +1,48 @@
+.content-col {
+  height: calc(100vh - 140px);
+  padding: 0;
+}
+
+.content {
+  padding: 30px;
+  background-color: $column-bg-color;
+  height: 100%;
+
+  .content__column {
+    h2 {
+      color: $text-grey-color;
+      padding: 15px 0;
+      font-weight: 800;
+      font-size: 14px;
+
+      .dot-color {
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        background-color: $card-tag-blue-color;
+        display: inline-block;
+        margin-right: 10px;
+      }
+    }
+
+    &-item {
+      margin: 15px 0;
+      padding:20px 25px;
+      border-radius: 8px;
+      background-color: $body-bg-color;
+      line-height: 1.8;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+      .item-name {
+        font-weight: 500;
+        font-size: 16px;
+      }
+      
+      span {
+        color: $text-grey-color;
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+  }
+}

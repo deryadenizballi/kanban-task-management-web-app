@@ -1,3 +1,105 @@
 .navbar {
-    border:1px solid red;
+  background-color: $body-bg-color;
+  height: 100vh;
+  color: $text-grey-color;
+  padding: 30px 0 30px 0;
+  border-right: 1px solid $border-color;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &__logo {
+    color: $text-title-color;
+    width: 100%;
+    font-size: 30px;
+    padding: 30px 0 30px 30px;
+    margin-bottom: 15px;
+
+    i {
+      margin-right: 10px;
+      color: $nav-item-active-color;
+    }
+  }
+
+  &__total {
+    padding: 0 0 0 30px;
+    margin-bottom: 15px;
+  }
+
+  &__mood {
+   width: 90%;
+   margin: auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: $content-bg-color;
+   padding: 15px;
+   border-radius: 5px;
+
+   input {
+    margin: 0 30px;
+   }
+  }
+
+  &__sidebar-close {
+   color: $text-grey-color;
+   text-align: left;
+   width: 100%;
+   margin: 30px 0 0 25px;
+   font-size: 16px;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+
+    .nav-link.active {
+      background-color: $nav-item-active-color;
+      padding: 20px 20px 20px 30px;
+      color: $text-title-color;
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
+      width: 100%;
+      text-align: left;
+    }
+
+    li {
+      padding: 5px 0;
+
+      button {
+        padding: 20px 20px 20px 30px;
+        color: $text-grey-color;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        transition: 500ms all;
+        width: 100%;
+        text-align: left;
+        i {
+          margin-right: 8px;
+        }
+
+        &:hover {
+          color: $text-title-color;
+          background-color: $nav-item-active-color;
+          border-top-right-radius: 30px;
+          border-bottom-right-radius: 30px;
+          transition: 500ms all;
+        }
+      }
+    }
+
+    &__user-add {
+      color: $nav-item-active-color;
+      background-color: transparent;
+      border: 0;
+      outline: 0;
+      padding: 20px 0 0 30px;
+      font-weight: 600;
+      i {
+        margin-right: 8px;
+      }
+    }
+  }
 }

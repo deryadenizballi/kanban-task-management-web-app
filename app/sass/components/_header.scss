@@ -1,0 +1,23 @@
+.kanban__title {
+    border-bottom: 1px solid $border-color;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+        font-size: 25px;
+        font-weight: 800;
+    }
+    button {
+        background-color: $card-tag-purple-color;
+        color: $text-title-color;
+        padding: 20px;
+        border-radius: 35px;
+        font-size: 18px;
+        font-weight: 600;
+        i {
+            margin-right: 8px;
+        }
+    }
+}
