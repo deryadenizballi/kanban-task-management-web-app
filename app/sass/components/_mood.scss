@@ -1,12 +1,15 @@
-input {
+.navbar__mood{
+ 
+  input {
+    margin: 0 25px;
+   
   --s: 20px; /* adjust this to control the size*/
-  
   height: var(--s);
   aspect-ratio: 2.5;
   width: auto; /* some browsers need this */
   border-radius: var(--s);
   padding: calc(var(--s)/10);
-  margin: calc(var(--s)/2);
+ 
   cursor: pointer;
   background:
     radial-gradient(farthest-side,#15202a 96%,#0000) 
@@ -26,4 +29,4 @@ input:checked {
   transform: rotate(0.1deg);
 }
 
-
+}

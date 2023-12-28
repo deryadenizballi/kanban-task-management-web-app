@@ -1,0 +1,120 @@
+.addnewtask {
+   
+    .modal-content {
+        background-color: $body-bg-color;
+        border-radius: 5px;
+
+        .modal-header {
+            border: 0;
+        }
+
+        .modal-title {
+            font-size: 18px;
+        }
+
+        .btn-close {
+            background-image: none;
+            i {
+                color: $text-title-color;
+                font-size: 18px;
+            }
+        }
+
+        .modal-body {
+            h6 {
+                font-size: 13px;
+            }
+            input {
+                width: 100%;
+                display: block;
+                border: 1px solid $border-color;
+                border-radius: 0;
+                margin: 15px 0;
+                background-color: $body-bg-color;
+                min-height: 50px;
+                padding-left: 10px;
+                color: $text-grey-color;
+                font-size: 16px;
+                margin-bottom: 30px;
+
+                &::placeholder {
+                    font-size: 12px;
+                }
+            }
+            textarea {
+                width: 100%;
+                display: block;
+                border: 1px solid $border-color;
+                border-radius: 0;
+                margin: 15px 0;
+                background-color: $body-bg-color;
+                min-height: 100px;
+                padding: 10px;
+                line-height: 1.8;
+                color: $text-grey-color;
+                font-size: 16px;
+                margin-bottom: 30px;
+
+                &::placeholder {
+                    font-size: 12px;
+                }
+
+            }
+
+            .subtask {
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    input {
+                        margin: 10px 0;
+                    }
+                }
+
+                &-close {
+                    margin-left: 20px;
+                    i {
+                        color: $text-grey-color;
+                    }
+                }
+            }
+
+            .add-subtask {
+                width: 100%;
+                background-color: $text-title-color;
+                padding: 15px;
+                border-radius: 30px;
+                color: $nav-item-active-color;
+                font-size: 14px;
+                margin: 10px 0 20px;
+            }
+            select {
+                width: 100%;
+                display: block;
+                border: 1px solid $border-color;
+                border-radius: 0;
+                margin: 15px 0 0;
+                background-color: $body-bg-color;
+                min-height: 50px;
+                padding-left: 10px;
+                color: $text-grey-color;
+                font-size: 16px;
+                
+            }
+        }
+
+        .modal-footer {
+            border: 0;
+            margin: 0;
+        }
+        .create-task {
+            background-color: $nav-item-active-color;
+            color: $text-title-color;
+            padding: 15px;
+            border-radius: 30px;
+            width: 100%;
+            display: block;
+        }
+    }
+}

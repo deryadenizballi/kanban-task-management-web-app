@@ -32,10 +32,12 @@
       background-color: $body-bg-color;
       line-height: 1.8;
       box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-
+      width: 100%;
+      text-align: left;
       .item-name {
         font-weight: 500;
         font-size: 16px;
+        color: $text-title-color;
       }
       
       span {

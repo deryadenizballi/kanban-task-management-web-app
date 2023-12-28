@@ -1,0 +1,61 @@
+
+.taskcard {
+    
+    .modal-content {
+        background-color: $body-bg-color;
+        border-radius: 5px;
+        padding: 15px;
+
+        .modal-header {
+            border: 0;
+        }
+
+        .modal-body {
+         
+            select {
+                width: 100%;
+                display: block;
+                border: 1px solid $border-color;
+                border-radius: 0;
+                margin: 15px 0 0;
+                background-color: $body-bg-color;
+                min-height: 50px;
+                padding-left: 10px;
+                color: $text-grey-color;
+                font-size: 16px;
+                
+            }
+        }
+    }
+
+    &-title {
+        font-size: 17px;
+        margin-bottom: 20px;
+        line-height: 1.6;
+    }
+
+    &-description {
+        color: $text-grey-color;
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    &-subtask {
+        margin-bottom: 25px;
+        li {
+
+            background-color:$content-bg-color;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 14px;
+            input {
+               margin-right: 10px;
+            }
+        }
+    }
+
+    .c-title {
+        font-size: 14px;
+    }
+}
