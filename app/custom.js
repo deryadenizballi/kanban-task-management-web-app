@@ -1,6 +1,9 @@
 let addnewtask = []
 
-
+addnewtask.forEach(item => {
+    console.log(item)
+    
+});
 const taskTitle =document.querySelector(".task-title");
 const createTaskBtn =document.querySelector(".create-task");
 const taskDescription =document.querySelector("#task-description");
@@ -10,6 +13,7 @@ const contentColumn =document.querySelector(".content__column");
 const addNewTaskPopup = new bootstrap.Modal('#addnewtask');
 const subTask = document.querySelector(".subtask");
 const addSubTaskBtn =document.querySelector(".add-subtask");
+const SubtaskList=document.querySelectorAll(".taskcard-subtask > li")
 
 
 addSubTaskBtn.addEventListener("click", ()=> {
@@ -17,7 +21,7 @@ addSubTaskBtn.addEventListener("click", ()=> {
 
    newSub.innerHTML =`
         <li>
-        <input type="text" placeholder="e.g Take of coffee break"> <button class="subtask-close">
+        <input type="text" class="newSub-item" placeholder="e.g Take of coffee break"> <button class="subtask-close">
         <i class="fa-solid fa-xmark"></i></button>
         </li>
     `;
@@ -35,10 +39,22 @@ addSubTaskBtn.addEventListener("click", ()=> {
            }
         });
     });
+
+
+
+    SubtaskList.forEach( item => {
+      const newSubItem =document.querySelectorAll(".newSub-item");
+       
+         newSubItem.forEach(newItem => {
+              const deneme =newItem.value;
+              console.log(deneme)
+              item.innerHTML=deneme;
+          });
+
+         
+        
+      });
     
-
-
-
 });
 
 createTaskBtn.addEventListener("click",()=> {
@@ -75,7 +91,5 @@ createTaskBtn.addEventListener("click",()=> {
     addNewTaskPopup.hide();
     taskTitle.value= '';
     taskDescription.value='';
-    console.log(addnewtask);
 })
-
 
